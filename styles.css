@@ -1,0 +1,339 @@
+/* google icon styles */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* global styles */
+/* remove default margin and padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* 10 px = 1 rem */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* set background color, padding, font style and color */
+body {
+    padding: 1.9rem 1.2rem;
+    background-color: #181719;
+
+    font-style: normal;
+    color: white;
+}
+
+/* nav container styles */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* logo styles */
+#logo {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 200;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+
+    border: 1px solid white;
+    padding: 8px;
+}
+
+/* set hamburger menu icon size to 3rem */
+#hamburger {
+    font-size: 3.5rem;
+}
+
+/* make nav bar take whole screen when active 
+and hide it by setting top to -100vh */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #181719;
+
+    position: absolute;
+    top: -100vh;
+    right: 0;
+    z-index: 9999999;
+    transition: 1s ease;
+}
+
+/* nav menu (ul) styles 
+center items and set gap between items to 3.2rem */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+/* actual menu item styles */
+.nav-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    
+    list-style: none;
+}
+
+#home {
+    font-weight: 700;
+    border-bottom: 2px solid white;
+}
+
+/* close menu button styles */
+#close-menu {
+    font-size: 3.5rem;
+    color: #F2F2F2;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* main styles */
+.main-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    gap: 2.5rem;
+    margin-top: 3.8rem;
+}
+
+/* "Modern interior" h1 styles */
+.main-text-container h1 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+}
+
+/* styles for paragraph below modern interior heading */
+.main-text-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+
+    max-width: 25rem;
+}
+
+/* read more button styles */
+.main-text-container a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+/* interior image container styles */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 3.7rem;
+}
+
+/* set interior image width to 100% to fit in screen */
+#interior-img {
+    width: 100%;
+}
+
+/* author container styles */
+.author-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.2rem;
+
+    position: relative;
+    right: 2.3rem;
+    top: -5rem;
+
+    padding: 1.3rem 2.2rem;
+    background-color: #181719;
+    max-width: 30rem;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* author info contains name and profession */
+.author-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.4rem;
+}
+
+/* make author avatar round */
+#author-avatar {
+    width: 3.7rem;
+    border-radius: 50%;
+}
+
+/* "Aliza Webber" styles */
+.name-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+/* "Interior designer" styles */
+.name-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #828282;
+}
+
+/* "Designed by" styles */
+.author-container h1 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+
+    max-width: 21rem;
+}
+
+/* center text inside footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    margin-top: 2rem;
+}
+
+/* footer text styles */
+footer h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+footer h1 a {
+    font-weight: 700;
+    color: #A9A9A9;
+}
+
+/* media querry for desktop devices */
+@media only screen and (min-width: 1024px) {
+    /* increase padding for body */
+    body {
+        padding: 4.2rem 7.7rem;
+    }
+
+    /* nav-bar is visible all the time */
+    .nav-bar {
+        top: 0;
+        background-color: transparent;
+        position: static;
+        width: auto;
+        height: auto;
+    }
+
+    /* increase gap between menu items */
+    .nav-menu {
+        flex-direction: row;
+        gap: 8.6rem;
+    }
+
+    /* hide open and close menu buttons */
+    #hamburger, #close-menu {
+        display: none;
+    }
+
+    /* vertically center elements inside main container */
+    .main-container {
+        display: flex;
+        align-items: center;
+    }
+
+    /* increase font size of "modern interior" heading */
+    .main-text-container h1 {
+        font-size: 4.8rem;
+        line-height: 6.1rem;
+    }
+
+    /* increase font size of paragraph below "modern interior" heading */
+    .main-text-container p {
+        max-width: 41rem;
+
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+    }
+
+    /* increase font size of read more button */
+    .main-text-container a {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    /* increase margin top of image container */
+    .image-container {
+        margin-top: 16.9rem;
+    }
+
+    /* increase max width and padding of author container */
+    .author-container {
+        max-width: 41rem;
+        padding: 3.4rem 7rem 3.4rem 2.6rem;
+    }
+
+    /* increase width of author avatar */
+    #author-avatar {
+        width: 5rem;
+    }
+
+    /* increase font size of author name */
+    .name-container h2 {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    /* increase font size of author profession */
+    .name-container h3 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    /* increase font size of "designed by" text */
+    .author-info-container h1 {
+        max-width: 28.7rem;
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+    }
+
+}
