@@ -92,6 +92,11 @@ center items and set gap between items to 3.2rem */
     line-height: 2.2rem;
     
     list-style: none;
+    transition: 0.5s;
+}
+
+.nav-item:hover {
+    transform: translateX(10%);
 }
 
 #home {
@@ -148,6 +153,12 @@ center items and set gap between items to 3.2rem */
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.7rem;
+
+    transition: 0.5s;
+}
+
+.main-text-container a:hover {
+    transform: translateX(10%);
 }
 
 /* interior image container styles */
